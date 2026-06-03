@@ -27,15 +27,6 @@ public class Student {
     public ArrayList<Grade> getGrades() {
         return grades;
     }
-    @Override public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Student student = (Student) o;
-        return id == student.id && Double.compare(student.gpa, gpa) == 0 && fullName.equals(student.fullName) && grades.equals(student.grades);
-    }
-    @Override public int hashCode() {
-        return Objects.hash(id, fullName, gpa, grades);
-    }
     @Override public String toString() {
         return "Student{" +
                 "id=" + id +
