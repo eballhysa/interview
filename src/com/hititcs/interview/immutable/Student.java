@@ -15,18 +15,10 @@ public class Student {
         this.gpa = gpa;
         this.grades = grades;
     }
-    public int getId() {
-        return id;
-    }
-    public String getFullName() {
-        return fullName;
-    }
-    public double getGpa() {
-        return gpa;
-    }
-    public ArrayList<Grade> getGrades() {
-        return grades;
-    }
+    public int getId() { return id; }
+    public String getFullName() { return fullName; }
+    public double getGpa() { return gpa; }
+    public ArrayList<Grade> getGrades() { return grades; }
     @Override public String toString() {
         return "Student{" +
                 "id=" + id +
